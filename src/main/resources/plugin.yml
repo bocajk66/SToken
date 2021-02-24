@@ -1,0 +1,10 @@
+name: SToken
+version: ${project.version}
+main: io.samuelyoung.stoken.SToken
+authors: [ Sykuu ]
+description: A simple token economy plugin
+website: samuelyoung.io
+commands:
+  SToken:
+    description: the token command
+    aliases: [ token, tok, st, tokens ]

@@ -1,0 +1,48 @@
+### General Settings ###
+token-starting-balance: 0
+
+### Messages ###
+messages:
+  player-only-command: '&c[!] This is a player only command'
+  no-permission: '&c[!] You do not have permissions to use this command.'
+  value-below-one: '&c[!] The value entered cannot be below one.'
+  player-not-exists: '&c[!] The player, %player%, does not exist.'
+  self-balance: '&6[!] Your token balance is %token_balance% tokens'
+  other-balance: '&6[!] %player%''s token balance is %token_balance% tokens'
+  invalid-number: '&c[!] The number entered is invalid. Check the number and try again.'
+  add-confirm-sender: '&6[!] You have added %token_amount% tokens to %player%''s token balance'
+  add-confirm-receiver: '&6[!] You have had %token_amount% tokens added to your balance'
+  set-confirm-sender: '&6[!] You have set %player%''s token balance to %token_amount% tokens'
+  set-confirm-receiver: '&6[!] Your token balance has been set to %token_amount% tokens'
+  take-confirm-sender: '&6[!] You have taken %token_amount% tokens from %player%''s token balance'
+  take-confirm-receiver: '&6[!] You have had %token_amount% tokens taken from your balance'
+  player-balance-too-low: '&c[!] %player%''s balance is too low. Their balance is %token_amount%'
+  token-found: '&6[!] You have found %amount%x Tokens!'
+
+### Permissions ###
+permissions:
+  balance-other: 'balance.other'
+  admin: 'stoken.admin'
+
+### Token Drop Settings ###
+give-tokens:
+  enabled:
+    mobs: true
+    block-break: true
+  mobs: #- Use the values form: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html below or contact Sykuu#5227 on discord for help.
+    SKELETON:
+      chance: "5/100" #- This means 1 out of 100 chance to drop. this would be a 5% chance.
+      amount: "1:2" #- this is the MIN and MAX amount of tokens given separated by a colon
+    SHEEP:
+      chance: "1/100"
+      amount: "1:2"
+  blocks: #- Use the values from: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html in the section below. Or contact Sykuu#5227 on discord for help.
+    COAL_ORE:
+      chance: "5/100"
+      amount: "1:5"
+    IRON_ORE:
+      chance: "7/100"
+      amount: "1:5"
+    DIAMOND_ORE:
+      chance: "5/100"
+      amount: "10:55"
